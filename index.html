@@ -1,4 +1,5 @@
 <title>Sundas Tariq Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Sundas Tariq's 2026 portfolio deck, brought to life as a scrolling, animated website.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -275,6 +276,39 @@
   .to-top:hover{ box-shadow:0 16px 34px -10px rgba(232,176,75,.55); }
   .to-top svg{ width:20px; height:20px; }
   @media (max-width:680px){ .to-top{ right:14px; bottom:calc(16px + env(safe-area-inset-bottom,0px)); } }
+
+  @media (max-width:680px){
+    header.top{ padding-inline:14px; padding-block:10px; gap:8px; }
+    header.top .brand{ padding:7px 11px; font-size:.85rem; gap:7px; }
+    header.top .brand .mark{ width:20px; height:20px; font-size:.62rem; }
+    header.top .counter{ padding:7px 11px; font-size:.66rem; }
+
+    .slide{ min-height:auto; padding:88px 16px 40px; gap:18px; }
+    .slide-content{ gap:18px; }
+    .frame{ border-radius:12px; }
+
+    .caption{ gap:10px; }
+    .caption h2{ font-size:clamp(1.1rem,5.5vw,1.4rem); }
+    .caption .head-row{ gap:10px; }
+    .caption .idx{ padding:5px 10px; font-size:.72rem; }
+
+    .blurb{ font-size:.92rem; line-height:1.6; }
+
+    .panel{ gap:10px; }
+    .panel .card{ padding:13px 14px; }
+
+    .tag-row .tag{ font-size:.68rem; padding:5px 10px; }
+
+    .preview-list .prow{ padding:12px 2px; gap:10px; }
+    .preview-list .prow .pname{ font-size:.88rem; }
+
+    .contact-cta{ gap:10px; }
+    .btn{ font-size:.82rem; padding:11px 18px; flex:1 1 auto; justify-content:center; }
+  }
+
+  @media (max-width:380px){
+    header.top .counter{ display:none; }
+  }
 </style>
 
 <div class="aurora" id="aurora"></div>
